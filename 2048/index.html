@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="score-container">Score: <span id="score">0</span></div>
+      <div id="board"></div>
+      <div id="game-over-overlay" style="display: none;">
+        <span>Game Over!</span>
+      </div>
+      <button id="new-game-button" onclick="newGame()" style="display: none;">
+        New Game
+      </button>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
