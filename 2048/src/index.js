@@ -76,6 +76,7 @@ function move(direction) {
   if (moved) {
     drawBoard();
   }
+  window.board = board;
 }
 
 function moveRows(board, direction) {
@@ -116,7 +117,6 @@ function moveTiles(tiles) {
 
 function updateScore() {
   const scoreElement = document.getElementById("score");
-  console.log(scoreElement);
   scoreElement.textContent = score;
 }
 
@@ -206,3 +206,6 @@ document.addEventListener("keydown", (e) => {
 
 newGame();
 window.newGame = newGame;
+window.move = move;
+window.gridSize = gridSize;
+window.board = board;
